@@ -58,8 +58,17 @@ header ul li:hover {
     color: var(--secondary-color);
 }
 h1{
-    text-align: center;
+    text-align: left;
+    margin-left: 3%;
 }
+ .header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ form {
+     margin-right: 3%;
+ }
 
 main {
     display: flex;
@@ -136,6 +145,43 @@ main {
     padding: 10px 20px;
     margin-top: 5px;
     cursor: pointer;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+form {
+    margin-block: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.searchbtn {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.searchbtn:hover {
+    background-color: #0056b3;
 }
 
 

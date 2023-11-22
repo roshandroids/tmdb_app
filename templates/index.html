@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <h1>Popular Movies</h1>
+    <div class="header-container">
+        <h1>Popular Movies</h1>
+        <form action="{{ url_for('index') }}" method="GET">
+            <input type="text" id="search" name="search" placeholder="Search movies..." value="{{ search_query }}">
+            <button class="searchbtn" type="submit">Search</button>
+        </form>
+    </div>
     <main id="main">
         {% for movie in movies %}
         <div class="movie">
